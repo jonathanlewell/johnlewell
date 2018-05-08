@@ -1,0 +1,29 @@
+/*.site-breadcrumbs {
+    max-width: $max-page-width;
+    padding-left: $spacing;
+    padding-right: $spacing;
+    margin: $spacing*4 auto $spacing auto; // Pushes the page below that navigation
+    font-family: $link-font-family; 
+    font-weight: 300;
+    color: #333;
+}*/
+ 
+.breadcrumbs {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include tablet {
+        display: flex;
+    }
+}
+
+.breadcrumbs__link {
+    font-family: $link-font-family; 
+    font-weight: 300;
+    color: #333;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}

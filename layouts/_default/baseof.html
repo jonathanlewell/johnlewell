@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+
+    <head>
+        {{ partial "site-meta.html" . }}
+        <title>{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}</title>
+        {{ range .AlternativeOutputFormats }}
+        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+        {{ end }}
+        <!-- Site CSS partial inserts here -->
+        {{ partial "site-styles.html" . }}
+    </head>
+
+    <body>
+        <!-- Visible body starts here -->
+        {{ partial "site-header.html" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "site-footer.html" . }}
+        {{ partial "site-scripts.html" . }}
+        <!-- Visible body ends here -->
+    </body>
+</html>

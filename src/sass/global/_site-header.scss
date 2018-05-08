@@ -1,0 +1,40 @@
+// Overall container
+/*.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: $spacing;
+} */
+
+// Header
+.site-header { 
+    margin: $spacing-half 0 $spacing-half 0;
+}
+
+// Site logo styles
+.site-logo {
+    font-family: $heading-font-family;
+    font-size: 1.375em;
+    text-decoration: none;
+    color: #222;
+}
+
+// Navigation styles
+.site-navigation {
+    &__menu {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-right: $spacing-half;
+        margin-bottom: 0;
+    }
+    &__link {
+        font-family: $heading-font-family;
+        text-decoration: none;
+        color: #222;
+    }
+}

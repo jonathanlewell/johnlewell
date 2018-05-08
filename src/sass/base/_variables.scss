@@ -1,0 +1,27 @@
+// Layout
+$base-line-height: 1.61803398875em; //= 25.89px or 32.36px on large
+$spacing: $base-line-height; // Works out at 1.5em or 24px. Used for paddings and margins
+$max-page-width: $spacing*40;
+
+// Spacing 
+
+$spacing-third: $base-line-height/3;
+$spacing-fith: $base-line-height/5;
+$spacing-half: $base-line-height/2;
+$spacing-one-and-half: $base-line-height*1.5;
+$spacing-double: $base-line-height*2;
+
+// Fonts 
+$heading-font-family: 'Roboto', sans-serif;
+$heading-font-weight: 400;
+$body-font-family: 'Lora', serif;
+$body-font-size: 1em;
+$body-font-weight: 400;
+$link-font-family:  'Roboto', sans-serif;
+
+// Colors
+$color-copy: #333;
+
+// Screen sizes (styles apply to anything less than $tablet by default)
+$tablet: 600px;
+$desktop: 800px;

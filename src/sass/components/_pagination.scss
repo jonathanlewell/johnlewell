@@ -1,0 +1,24 @@
+.pagination {
+    max-width: 100%;
+    display: flex;
+    list-style: none;
+    margin-bottom: $spacing;
+    background-color: #F4F6F8;
+    justify-content: center;
+    &__item {
+        margin-bottom: 0;
+        color:#4285F4;        
+        padding: .75em;    
+    &:hover {
+        background:#eee;
+        }
+    }
+    &__item--current {
+        background: #fff;
+    }
+    &__link {
+        text-decoration: none;
+        border-color:#ddd;
+    }
+}
+

@@ -1,0 +1,18 @@
+.post-meta {
+    margin-bottom: 0;
+    font-size: 0.85em;
+    margin-bottom: $spacing-half;
+    display: flex;
+    flex-wrap: wrap;
+    .post-meta__reading-time {
+        margin-right: $spacing-half;
+    }
+}
+
+.post-headline {
+    font-size: 1.375em;
+    margin-bottom: 0.25em;
+    @include tablet {
+        font-size: 1.5em;
+    }
+}

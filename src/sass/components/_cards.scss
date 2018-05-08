@@ -1,0 +1,82 @@
+/* Flexcards */
+
+.card {
+    display: flex;
+    margin-bottom: $spacing;
+    flex-direction: row;
+    @include tablet {
+        .card__media--under {
+            margin-bottom: .25rem;
+        }        
+    }
+}
+
+/* The top feature card of every page */
+
+.card:first-child {
+    flex-direction: column;
+    .card__header {
+        font-size: 1.325em;
+        margin-bottom: .5em;
+    }
+    .post-meta {
+        margin-bottom: 0.25rem;
+    }
+    .card__link {
+        text-decoration: none;
+    }
+    .card__description {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    .card__media--top {
+        display: none;
+    }
+}
+
+/* The cards underneath the feature card */
+
+.card:not(:first-child) {
+    flex-direction: row;
+    margin-bottom: .5rem;
+    @include tablet {
+        margin-bottom: $spacing-half;
+    }
+    .card__media--under {
+        display: none;
+        margin-bottom: 0;
+    }
+    .card__media--top {
+        margin-right: $spacing-half;
+        max-width: 33.333%;
+    }
+    .card__header { 
+        font-size: 1em;
+        margin-bottom: 0;
+        @include tablet {
+            font-size: 1.125em;
+            margin-bottom: .25rem;
+        }
+    }    
+    .card__description {
+        display: none;
+        margin-bottom: 0;
+        @include tablet {
+            display: block;
+            margin-bottom: 0;
+        }
+    }    
+    .post-meta {
+        margin-bottom: 0;
+        font-size: 0.85em;
+        @include tablet {
+            margin-bottom: .25rem;
+        }
+    }
+    .post-meta__date {
+        display: none;
+    }
+    .card__link {
+        text-decoration: none;
+    }
+}
