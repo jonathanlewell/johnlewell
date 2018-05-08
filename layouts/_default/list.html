@@ -1,5 +1,18 @@
 {{ define "main" }}
 <main class="main" role="main" id="main">
+
+    <!-- List introduction -->
+    <div class="container">
+        <!-- Breadcrumbs -->
+        {{ partial "breadcrumbs/breadcrumbs.html" . }}
+        <!-- Page title -->
+        <h1 class="post-headline" itemprop="headline">{{ .Title }}</h1>
+        <!-- Markdown content -->
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    </div>
+
     <div class="container">
         <!-- Activate the pagination and then range through pages in blog -->
         {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
@@ -14,17 +27,17 @@
                 <!-- Card content -->
                 <div class="card__content">
                     <!-- Card header -->
-                    <h3 class="card__header"itemprop="headline">
+                    <h2 class="card__header"itemprop="headline">
                         <a class="card__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </h3>
+                    </h2>
+                    <!-- Read time and publish date -->
+                    {{ partial "post-meta.html" . }}
                     <!-- Card media -->
                     <div class="card__media--under">
                         <a href="{{ .RelPermalink }}" itemprop="url">
                             <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
                         </a>
                     </div>
-                     <!-- Read time and publish date -->
-                    {{ partial "post-meta.html" . }}
                     <!-- Read description -->
                     <p class="card__description" itemprop="description">{{ .Params.description }}
                    <a href="{{ .RelPermalink }}" class="card__link" itemprop="url">Keep reading »</a></p>

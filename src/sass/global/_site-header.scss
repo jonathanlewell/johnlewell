@@ -9,7 +9,12 @@
 
 // Header
 .site-header { 
-    margin: $spacing-half 0 $spacing-half 0;
+    padding: $spacing-half 0 $spacing-half 0;
+    margin-bottom: $spacing;
+    background-color: #eee;
+    @include tablet {
+        margin-bottom: $spacing-half;
+    }
 }
 
 // Site logo styles

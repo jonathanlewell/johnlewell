@@ -3,11 +3,13 @@
     <div class="container">
         <article itemscope itemtype="http://schema.org/WebPage">
             
+            <!-- Breadcrumbs -->
+            {{ partial "breadcrumbs/breadcrumbs.html" . }}
+            
             <!-- Page title -->
             <h1 itemprop="headline">{{ .Title }}</h1>
 
-            <!-- Breadcrumbs -->
-            {{ partial "breadcrumbs/breadcrumbs.html" . }}
+            
 
             <!-- Page featured image -->
             {{ if .Params.featured_image }}

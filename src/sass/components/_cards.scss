@@ -4,23 +4,18 @@
     display: flex;
     margin-bottom: $spacing;
     flex-direction: row;
-    @include tablet {
-        .card__media--under {
-            margin-bottom: .25rem;
-        }        
-    }
 }
 
 /* The top feature card of every page */
 
 .card:first-child {
     flex-direction: column;
+    margin-bottom: $spacing-half;
     .card__header {
-        font-size: 1.325em;
-        margin-bottom: .5em;
+        margin-bottom: $spacing/5;
     }
     .post-meta {
-        margin-bottom: 0.25rem;
+        margin-bottom: $spacing-half;
     }
     .card__link {
         text-decoration: none;
@@ -32,16 +27,16 @@
     .card__media--top {
         display: none;
     }
+    .card__media--under {
+        margin-bottom: $spacing/4;
+    }
 }
 
 /* The cards underneath the feature card */
 
 .card:not(:first-child) {
     flex-direction: row;
-    margin-bottom: .5rem;
-    @include tablet {
-        margin-bottom: $spacing-half;
-    }
+    margin-bottom: $spacing-half;
     .card__media--under {
         display: none;
         margin-bottom: 0;
@@ -52,7 +47,7 @@
     }
     .card__header { 
         font-size: 1em;
-        margin-bottom: 0;
+        margin-bottom: $spacing/7;
         @include tablet {
             font-size: 1.125em;
             margin-bottom: .25rem;

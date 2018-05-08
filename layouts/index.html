@@ -1,46 +1,47 @@
 {{ define "main" }}
-<main class="main" role="main" id="main">
+<main class="main main--home" role="main" id="main">
+
+    <!-- List introduction -->
     <div class="container">
-        <!-- Start range loop -->
-        {{ range first 1 (where .Data.Pages "Type" "blog") }}
-        <!-- Start flexcard for article layout -->
-        <article class="card card--vertical" itemscope itemtype="http://schema.org/BlogPosting">
-                <h3 class="card__header" itemprop="headline"><a class="card__header-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                <div class="card__media">
-                    <a href="{{ .RelPermalink }}" itemprop="url">
-                        <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
-                    </a>
-                </div>
-                <p class="card__description" itemprop="description">{{ .Params.description }}
-                <a href="{{ .RelPermalink }}" class="card__read-more" itemprop="url">Keep reading »</a></p>
-                <!-- Meta tags for Google about the post-->
-                <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
-                <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
-                <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
-                <!-- End meta tags-->
-        <!-- End flexcard -->        
-        </article>
-        <!-- End range loop -->
-        {{ end }}
-        <!-- Start second range loop -->
-        {{ range first 10 (where .Data.Pages "Type" "blog") }}
+        <!-- Markdown content -->
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Activate the pagination and then range through pages in blog -->
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+        {{ range $paginator.Pages }}
             <!-- Start flexcard for articles layout -->
-            <article class="card card--horizontal" itemscope itemtype="http://schema.org/BlogPosting">
-                <div class="card__media">
+            <article class="card" itemscope itemtype="http://schema.org/BlogPosting">
+                <div class="card__media--top">
                     <a href="{{ .RelPermalink }}" itemprop="url">
                         <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
                     </a>
                 </div>
+                <!-- Card content -->
                 <div class="card__content">
-                    <h3 class="card__header" itemprop="headline"><a class="card__header-link" href="{{ .RelPermalink }}" itemprop="url">{{ .Title }}</a></h3>
+                    <!-- Card header -->
+                    <h2 class="card__header"itemprop="headline">
+                        <a class="card__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
+                    <!-- Read time and publish date -->
+                    {{ partial "post-meta.html" . }}
+                    <!-- Card media -->
+                    <div class="card__media--under">
+                        <a href="{{ .RelPermalink }}" itemprop="url">
+                            <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
+                        </a>
+                    </div>
+                    <!-- Read description -->
                     <p class="card__description" itemprop="description">{{ .Params.description }}
-                        <a href="{{ .RelPermalink }}" class="card__read-more" itemprop="url">Keep reading »</a></p>                   
-                </div>
+                   <a href="{{ .RelPermalink }}" class="card__link" itemprop="url">Keep reading »</a></p>
+                </div>                
                 <!-- Meta tags for Google about the post-->
                 <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
                 <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
                 <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
-                <!-- End meta tags-->
             <!-- End flexcard -->        
             </article>
         <!-- End second range loop -->
