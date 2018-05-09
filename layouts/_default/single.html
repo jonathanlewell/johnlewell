@@ -7,13 +7,11 @@
             {{ partial "breadcrumbs/breadcrumbs.html" . }}
             
             <!-- Page title -->
-            <h1 itemprop="headline">{{ .Title }}</h1>
-
-            
+            <h1 itemprop="headline">{{ .Title }}</h1>         
 
             <!-- Page featured image -->
             {{ if .Params.featured_image }}
-                <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
+                <img class="lazyload post-featured-image" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
             {{ end }}
             
             <!-- Markdown content -->

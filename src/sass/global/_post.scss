@@ -5,16 +5,20 @@
     display: flex;
     flex-wrap: wrap;
     .post-meta__reading-time {
-        margin-right: $spacing-half;
+        margin-right: $spacing;
     }
 }
 
 .post-headline {
     font-size: 1.375em;
     line-height: 1.0909em;
-    margin-bottom: $spacing-third;
+    margin-bottom: $spacing-fourth;
     @include tablet {
         font-size: 1.618em;
         line-height: 1em;
     }
+}
+
+.post-featured-image {
+    margin-bottom: $spacing-half;
 }

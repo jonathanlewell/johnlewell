@@ -11,6 +11,9 @@
 .card:first-child {
     flex-direction: column;
     margin-bottom: $spacing-half;
+    @include tablet {
+        margin-bottom: $spacing;
+    }
     .card__header {
         margin-bottom: $spacing-fifth;
     }
@@ -30,7 +33,7 @@
         display: none;
     }
     .card__media--under {
-        margin-bottom: $spacing/4;
+        margin-bottom: 0;
     }
 }
 
