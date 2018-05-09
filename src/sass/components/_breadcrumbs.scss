@@ -9,13 +9,11 @@
 }*/
  
 .breadcrumbs {
-    display: none;
-    @include tablet {
         display: flex;
-        margin-bottom: $spacing-fourth;
+        flex-wrap: wrap;
+        margin-bottom: $spacing;
         padding: 0;
         list-style-type: none;
-    }
 }
 
 .breadcrumbs__link {
@@ -27,4 +25,12 @@
 .breadcrumbs__item {
     display: inline-block;
     margin-right: $spacing-third;
+    margin-bottom: 0;
+    font-size: .85em;
+        font-weight: 300;
+        line-height: 1.5em;
+        @include tablet {
+            font-size: 1em;
+            line-height: $base-line-height;
+        }
 }

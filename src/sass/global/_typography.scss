@@ -53,11 +53,14 @@ pre,table,fieldset,hr{
 
 small {
     font-style: italic;
+    font-size: 0.764em;
+    line-height: 1.963em;
 }
 
 // Link text styles
 a {
-    color: #1EAEDB; 
+    color: #1EAEDB;
+    font-family: $link-font-family;
 }
   a:hover {      
     color: #0FA0CE; 

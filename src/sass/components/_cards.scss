@@ -12,10 +12,12 @@
     flex-direction: column;
     margin-bottom: $spacing-half;
     .card__header {
-        margin-bottom: $spacing/5;
+        margin-bottom: $spacing-fifth;
     }
     .post-meta {
         margin-bottom: $spacing-half;
+        font-size: 0.764em;
+        line-height: 1.963em;
     }
     .card__link {
         text-decoration: none;
@@ -47,10 +49,11 @@
     }
     .card__header { 
         font-size: 1em;
-        margin-bottom: $spacing/7;
+        line-height: 1.5em;
+        margin-bottom: 0;
         @include tablet {
             font-size: 1.125em;
-            margin-bottom: .25rem;
+            line-height: 1.333em;
         }
     }    
     .card__description {
@@ -63,10 +66,8 @@
     }    
     .post-meta {
         margin-bottom: 0;
-        font-size: 0.85em;
-        @include tablet {
-            margin-bottom: .25rem;
-        }
+        font-size: 0.764em;
+        line-height: 1.963em;
     }
     .post-meta__date {
         display: none;
