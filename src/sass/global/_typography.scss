@@ -11,14 +11,14 @@ body {
     line-height: $base-line-height;
     font-family: $body-font-family;
     font-weight: $body-font-weight;
-    color: #222;
+    color: $default-text-color;
 }
 
 // Heading styles 
 h1, h2, h3, h4, h5 {
     font-family: $heading-font-family; 
     font-weight: $heading-font-weight;
-    color: #222;
+    color: $heading-text-color;
     margin-bottom: $spacing-half;
 } 
 h1 {
@@ -55,13 +55,14 @@ small {
     font-style: italic;
     font-size: 0.764em;
     line-height: 1.963em;
+    color: $small-text-color;
 }
 
 // Link text styles
 a {
-    color: #1EAEDB;
+    color: $link-text-color;
     font-family: $link-font-family;
 }
   a:hover {      
-    color: #0FA0CE; 
+    color: $link-text-color-hover;
 }

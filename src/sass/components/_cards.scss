@@ -1,5 +1,9 @@
 /* Flexcards */
 
+.cards {
+    margin-bottom: $spacing;
+}
+
 .card {
     display: flex;
     margin-bottom: $spacing;
@@ -38,7 +42,7 @@
 
 .card:not(:first-child) {
     flex-direction: row;
-    margin-bottom: $spacing-half;
+    margin-bottom: $spacing;
     .card__media--under {
         display: none;
         margin-bottom: 0;
@@ -61,9 +65,8 @@
         margin-bottom: 0;
         @include tablet {
             display: block;
-            margin-bottom: 0;
         }
-    }    
+    }
     .post-meta {
         margin-bottom: 0;
         font-size: 0.764em*.85;

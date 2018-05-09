@@ -21,7 +21,18 @@ $body-font-weight: 400;
 $link-font-family:  'Roboto', sans-serif;
 
 // Colors
-$color-copy: #333;
+$heading-text-color: rgba(0,0,0,.84);
+$small-text-color: rgba(0,0,0,.54);
+$caption-text-color: rgba(0,0,0,.54);
+$default-text-color:rgba(0,0,0,.84);
+$link-text-color: #007ACE;
+$link-text-color-hover: #084E8A;
+
+$button-color: #5C6AC4;
+$button-color-hover: #202E78;
+
+// Borders 
+$block-border: 1px solid $button-color;
 
 // Screen sizes (styles apply to anything less than $tablet by default)
 $tablet: 600px;

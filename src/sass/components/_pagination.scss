@@ -3,22 +3,22 @@
     display: flex;
     list-style: none;
     margin-bottom: $spacing;
-    background-color: #F4F6F8;
     justify-content: center;
+    border: $block-border;
+    border-radius: .25em;
     &__item {
         margin-bottom: 0;
-        color:#4285F4;        
         padding: $spacing-half;    
     &:hover {
-        background:#eee;
+        background:#F4F5FA;
         }
     }
     &__item--current {
-        background: #fff;
+        background: #F4F5FA;
     }
     &__link {
         text-decoration: none;
-        border-color:#ddd;
+        color: $button-color;
     }
 }
 
