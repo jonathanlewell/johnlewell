@@ -7,6 +7,13 @@
     padding: $spacing;
 } */
 
+.container--site-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 // Header
 .site-header { 
     padding: $spacing-half 0;
@@ -16,21 +23,22 @@
 
 // Site logo styles
 .site-logo {
-    font-family: $heading-font-family;
-    font-size: 1.236em;
-    line-height: 2em;
-    font-weight: 500;
-    text-decoration: none;
-    color: $heading-text-color;
+    margin-right: auto;
+}
+.site-logo-svg {
+    height: 2em;
+    shape-rendering: geometricPrecision;
 }
 
 // Navigation styles
 .site-navigation {
+
     &__menu {
         list-style: none;
         margin: 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
     }
     &__item {
@@ -41,8 +49,8 @@
         font-family: $link-font-family;
         text-decoration: none;
         color: $default-text-color;
-        font-size: .85em;
+        font-size: 1em;
         font-weight: 300;
-        line-height: 1em;
+        line-height: 1.5em;
     }
 }
