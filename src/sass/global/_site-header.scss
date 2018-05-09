@@ -26,8 +26,12 @@
     margin-right: auto;
 }
 .site-logo-svg {
+    margin-bottom: $spacing-third;
     height: 2em;
     shape-rendering: geometricPrecision;
+    @include tablet {
+        margin-bottom: 0;
+    }
 }
 
 // Navigation styles
