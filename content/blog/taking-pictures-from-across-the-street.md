@@ -22,12 +22,12 @@ I find that by squaring up the scene into straight horizontals and verticals I�
 I was looking for a shot which said “this is London” — and there she was. The poster indicates the area and lists some of the streets in its vicinity. The colour scheme is ready-made, with no intrusive or distracting hues. I particularly liked the different textures in the black wall: four shades of black, all underlined by the grey pavement at the bottom.
 
 The image and the technique used for getting it are both very simple, but I think the result is pleasing. The shot is entirely candid: I’ve no idea who the subject is, or why she’s holding an unlit cigarette. Her appearance is so amazingly efficient: with headphones not only keeping her hair in place but which are also entirely cable-free, thus allowing her to avoid the geeky look that usually puts people at odds with their surroundings.
-
+ 
 ## A Slice of Life
 
 I’d only just switched to my “keep-it-simple” mode when I came across the above subject and the same is true of the one below. I don’t think this next shot is quite as simple, but it does carve out a typical slice of London life, on a certain day, in a specific year. In fifty years’ time any onlooker will be able to identify the fashions, together with the music and events mentioned on the posters, and say: “This was London in 2017.”
 
-<img class="lazyload" data-src="/images/blog/Before_the_Dawn.jpg" alt="Before the Dawn photo by John Lewell">
+{{< figure src="/images/blog/Before_the_Dawn.jpg" caption="Before the Dawn by John Lewell" >}}
 
 The photo exemplifies my point about horizontals and verticals. If I’d taken the shot at an angle it really wouldn’t have worked. Not everything would have been in sharp focus. The light was not especially bright, obliging me to work at ISO800 with a fairly wide aperture of f/3.2. In turn, the ISO and aperture settings enabled me to get a fast shutter speed of 1/800th of a second, necessary to freeze the movement of people walking slowly across the frame.
 
@@ -45,7 +45,7 @@ In my photo the bold symbols for music, movies and books also help to counteract
 
 My third shot (below) is a study in grey, in much the same way as the featured image was a study in black. Again, I find this a pleasing shot, despite it being not entirely “squared away” with true horizontals. Something in the window has caught the man’s eye. He pauses for a split second before continuing, one foot lifted an inch above the ground. His grey suit tones with the grey walls and the monochrome etchings. Clearly we’re in a very different part of London compared to the settings of the other two shots.
 
-<img class="lazyload" data-src="/images/blog/The_Hesitant_Buyer.jpg" alt="The Hesitant Buyer photo by John Lewell">
+{{< figure src="/images/blog/The_Hesitant_Buyer.jpg" caption="The Hesitant Buyer photo by John Lewell" >}}
 
 Yet I think this image would be largely without merit if it were not for the subtle colours in the lower panes of opaque glass below the main window. Whereas there’s nothing to be seen behind the row of framed pictures, there’s clearly something interesting going on in the basement.
 
