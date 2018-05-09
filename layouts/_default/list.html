@@ -5,12 +5,14 @@
     <div class="container">
         <!-- Breadcrumbs -->
         {{ partial "breadcrumbs/breadcrumbs.html" . }}
-        <!-- Page title -->
-        <h1 class="post-headline" itemprop="headline">{{ .Title }}</h1>
-        <!-- Markdown content -->
-        <div class="post-content">
-            {{ .Content }}
-        </div>
+        <section class="list-introduction">
+            <!-- Page title -->
+            <h1 class="post-headline" itemprop="headline">{{ .Title }}</h1>
+            <!-- Markdown content -->
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+        </section>
     </div>
 
     <div class="container">

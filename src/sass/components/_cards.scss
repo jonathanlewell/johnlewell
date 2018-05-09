@@ -14,12 +14,12 @@
 
 .card:first-child {
     flex-direction: column;
-    margin-bottom: $spacing;
+    margin-bottom: $spacing-one-and-half;
     .card__header {
         margin-bottom: $spacing-fourth;
     }
     .post-meta {
-        margin-bottom: $spacing-half;
+        margin-bottom: $spacing;
         font-size: 0.764em;
         line-height: 1.963em;
     }
