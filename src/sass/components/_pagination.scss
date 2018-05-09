@@ -2,10 +2,8 @@
     max-width: 100%;
     display: flex;
     list-style: none;
-    
     justify-content: center;
     border: $block-border;
-    border-radius: .25em;
     &__item {
         margin-bottom: 0;
         padding: $spacing-half;    
@@ -18,7 +16,7 @@
     }
     &__link {
         text-decoration: none;
-        color: $button-color;
+        color: $button-text-color;
     }
 }
 
