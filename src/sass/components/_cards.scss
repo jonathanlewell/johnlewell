@@ -10,12 +10,9 @@
 
 .card:first-child {
     flex-direction: column;
-    margin-bottom: $spacing-half;
-    @include tablet {
-        margin-bottom: $spacing;
-    }
+    margin-bottom: $spacing;
     .card__header {
-        margin-bottom: $spacing-fifth;
+        margin-bottom: $spacing-fourth;
     }
     .post-meta {
         margin-bottom: $spacing-half;
@@ -33,7 +30,7 @@
         display: none;
     }
     .card__media--under {
-        margin-bottom: 0;
+        margin-bottom: $spacing-half;
     }
 }
 
@@ -69,8 +66,8 @@
     }    
     .post-meta {
         margin-bottom: 0;
-        font-size: 0.764em;
-        line-height: 1.963em;
+        font-size: 0.764em*.85;
+        line-height: 1.963em*1.25;
     }
     .post-meta__date {
         display: none;
