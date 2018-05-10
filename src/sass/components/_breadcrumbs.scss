@@ -19,12 +19,11 @@
 
 .breadcrumbs__item {
     display: inline-block;
-    margin-right: $spacing-third;
+    margin-right: $spacing-half;
     margin-bottom: 0;
     font-size: .85em;
-    line-height: 1.5em;
+    line-height: $base-line-height;
     @include tablet {
         font-size: 1em;
-        line-height: $base-line-height;
     }
 }

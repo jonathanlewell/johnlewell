@@ -3,6 +3,9 @@ body {
 }
 
 main {
-    margin-top: $spacing;
+    margin-top: $spacing-half;
     margin-bottom: 0;
+    @include tablet {
+        margin-top: $spacing;
+    }
 }

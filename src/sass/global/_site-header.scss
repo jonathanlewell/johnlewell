@@ -46,6 +46,12 @@
         margin-right: $spacing-half;
         margin-bottom: 0;
     }
+    &__link {
+        font-size: .85em;
+        @include tablet {
+            font-size: 1em;
+        }
+    }
 }
 
 .site-navigation__item:last-child {
