@@ -1,12 +1,12 @@
 /* Used in lists */
 .list-introduction {
-    margin-bottom: $spacing-one-and-half;
+    margin-bottom: $spacing;
 } 
 
 .post-meta {    
     font-size: 0.764em;
     line-height: 1.963em;
-    margin-bottom: $spacing;
+    margin-bottom: $spacing-half;
     display: flex;
     flex-wrap: wrap;
     .post-meta__reading-time {

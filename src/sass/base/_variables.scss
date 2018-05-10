@@ -21,16 +21,23 @@ $body-font-weight: 400;
 $link-font-family:  'Roboto', sans-serif;
 
 // Colors
-$heading-text-color: rgba(0,0,0,.84);
+
+$primary-color: #D23014;
+$primary-color-dark: #AA1F05;
+$secondary-color: #F46144;
+$secondary-color-dark:  #9A393C;
+
+
+$heading-text-color:   rgba(0,0,0,.84);
 $small-text-color: rgba(0,0,0,.54);
 $caption-text-color: rgba(0,0,0,.54);
-$default-text-color:rgba(0,0,0,.84);
-$link-text-color: #007ACE;
-$link-text-color-hover: #084E8A;
+$default-text-color: #4B122A;
+$link-text-color: $secondary-color;
+$link-text-color-hover: $secondary-color-dark;
 
-$button-color: #5C6AC4;
-$button-color-hover: #202E78;
-$button-text-color: #3E4155;
+$button-color: $primary-color;
+$button-color-hover: $primary-color-dark;
+$button-text-color: $default-text-color;
 
 // Borders 
 $block-border: 1px solid $button-color;

@@ -16,7 +16,7 @@
     </div>
 
     <div class="container">
-        <section class="cards">
+
             <!-- Activate the pagination and then range through pages in blog -->
             {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
             {{ range $paginator.Pages }}
@@ -31,7 +31,7 @@
                     <div class="card__content">
                         <!-- Card header -->
                         <h2 class="card__header"itemprop="headline">
-                            <a class="card__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            <a class="card__link--header" href="{{ .RelPermalink }}">{{ .Title }}</a>
                         </h2>
                         <!-- Read time and publish date -->
                         {{ partial "post-meta.html" . }}
@@ -53,7 +53,7 @@
                 </article>
             <!-- End second range loop -->
             {{ end }}
-        </section>
+
         <!-- Pagination -->
         {{ partial "pagination.html" . }}
     <!-- End container -->

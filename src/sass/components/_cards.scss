@@ -1,8 +1,5 @@
 /* Flexcards */
 
-.cards {
-    margin-bottom: $spacing;
-}
 
 .card {
     display: flex;
@@ -14,17 +11,22 @@
 
 .card:first-child {
     flex-direction: column;
-    margin-bottom: $spacing-one-and-half;
+    margin-bottom: $spacing;
     .card__header {
         margin-bottom: $spacing-fourth;
     }
     .post-meta {
-        margin-bottom: $spacing;
+        margin-bottom: $spacing-half;
         font-size: 0.764em;
         line-height: 1.963em;
     }
     .card__link {
         text-decoration: none;
+        color: $secondary-color;
+        &--header {
+            color: $secondary-color-dark;
+            text-decoration: none;
+        }
     }
     .card__description {
         font-size: 1em;
@@ -55,6 +57,7 @@
         font-size: 1em;
         line-height: 1.5em;
         margin-bottom: 0;
+        color: $secondary-color-dark;
         @include tablet {
             font-size: 1.125em;
             line-height: 1.333em;
@@ -77,5 +80,10 @@
     }
     .card__link {
         text-decoration: none;
+        color: $secondary-color;
+        &--header {
+            color: $secondary-color-dark;
+            text-decoration: none;
+        }
     }
 }
