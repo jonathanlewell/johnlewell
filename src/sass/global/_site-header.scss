@@ -9,15 +9,19 @@
 
 .container--site-header {
     display: flex;
+    height: $spacing-triple;
+    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    @include tablet {
+        height: $spacing-double;
+        flex-direction: row;
+    }
 }
 
-
 // Header
-.site-header { 
+.site-header {
     padding: $spacing-half 0;
-    margin-bottom: 0;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -25,29 +29,24 @@
 .site-logo {
     margin-right: auto;
 }
+
 .site-logo-svg {
-    margin-bottom: $spacing-third;
     height: 2em;
-    shape-rendering: geometricPrecision;
-    @include tablet {
-        margin-bottom: 0;
-    }
 }
 
 // Navigation styles
 .site-navigation {
-
     &__menu {
         list-style: none;
         margin: 0;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
     }
     &__item {
-        margin-right: $spacing-half;
+        margin-left: $spacing-half;
         margin-bottom: 0;
+        @include tablet {
+            margin-left: $spacing;
+        }
     }
     &__link {
         font-family: $link-font-family;
@@ -57,4 +56,8 @@
         font-weight: 300;
         line-height: 1.5em;
     }
+}
+
+.site-navigation__item:first-child {
+    margin-left: 0;
 }

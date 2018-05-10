@@ -11,6 +11,7 @@ $spacing-fifth: $base-line-height/5;
 $spacing-half: $base-line-height/2;
 $spacing-one-and-half: $base-line-height*1.5;
 $spacing-double: $base-line-height*2;
+$spacing-triple: $base-line-height*3;
 
 // Fonts 
 $heading-font-family: 'Roboto', sans-serif;
@@ -27,13 +28,15 @@ $primary-color-dark: #AA1F05;
 $secondary-color: #F46144;
 $secondary-color-dark:  #9A393C;
 
-
+$white-color: #FFFDFC;
 $heading-text-color:   rgba(0,0,0,.84);
 $small-text-color: rgba(0,0,0,.54);
 $caption-text-color: rgba(0,0,0,.54);
 $default-text-color: #4B122A;
 $link-text-color: $secondary-color;
 $link-text-color-hover: $secondary-color-dark;
+
+
 
 $button-color: $primary-color;
 $button-color-hover: $primary-color-dark;
