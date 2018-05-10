@@ -1,15 +1,16 @@
 {{ define "main" }}
 <main class="main" role="main" id="main">
-
-    <!-- List introduction -->
+    <!-- Width container -->
     <div class="container">
+
+        <!-- Introduction -->
+        <!-- Page title -->
+        <h1 itemprop="headline">{{ .Params.description }}</h1>
         <!-- Markdown content -->
         <div class="post-content">
             {{ .Content }}
         </div>
-    </div>
 
-    <div class="container">
         
             <!-- Activate the pagination and then range through pages in blog -->
             {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
@@ -48,8 +49,7 @@
             <!-- End second range loop -->
             {{ end }}
         
-    <!-- End container -->
-    </div>
+</div>
 <!-- End main -->    
 </main>
 <!-- End main insert -->
