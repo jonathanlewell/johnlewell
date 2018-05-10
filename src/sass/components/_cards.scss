@@ -17,16 +17,6 @@
     }
     .post-meta {
         margin-bottom: $spacing-half;
-        font-size: 0.764em;
-        line-height: 1.963em;
-    }
-    .card__link {
-        text-decoration: none;
-        color: $secondary-color;
-        &--header {
-            color: $secondary-color-dark;
-            text-decoration: none;
-        }
     }
     .card__description {
         font-size: 1em;
@@ -57,7 +47,6 @@
         font-size: 1em;
         line-height: 1.5em;
         margin-bottom: 0;
-        color: $secondary-color-dark;
         @include tablet {
             font-size: 1.125em;
             line-height: 1.333em;
@@ -72,18 +61,8 @@
     }
     .post-meta {
         margin-bottom: 0;
-        font-size: 0.764em*.85;
-        line-height: 1.963em*1.25;
     }
     .post-meta__date {
         display: none;
-    }
-    .card__link {
-        text-decoration: none;
-        color: $secondary-color;
-        &--header {
-            color: $secondary-color-dark;
-            text-decoration: none;
-        }
     }
 }

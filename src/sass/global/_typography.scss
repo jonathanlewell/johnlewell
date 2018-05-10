@@ -62,6 +62,7 @@ small {
 a {
     color: $link-text-color;
     font-family: $link-font-family;
+    text-decoration: none;
     line-height: 0;
 }
   a:hover {      

@@ -3,14 +3,15 @@
     margin-bottom: $spacing;
 } 
 
-.post-meta {    
-    font-size: 0.764em;
-    line-height: 1.963em;
+.post-meta {
+    font-family: $heading-font-family;
+    font-size: .85em;
+    line-height: 1.5em;
     margin-bottom: $spacing-half;
     display: flex;
     flex-wrap: wrap;
     .post-meta__reading-time {
-        margin-right: $spacing;
+        margin-right: $spacing-half;
     }
 }
 

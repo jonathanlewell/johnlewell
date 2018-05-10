@@ -9,6 +9,7 @@
 }*/
  
 .breadcrumbs {
+        font-family: $link-font-family; 
         display: flex;
         flex-wrap: wrap;
         margin-bottom: $spacing;
@@ -16,22 +17,14 @@
         list-style-type: none;
 }
 
-.breadcrumbs__link {
-    font-family: $link-font-family; 
-    font-weight: 300;
-    color: $link-text-color;
-    text-decoration: none;
-}
-
 .breadcrumbs__item {
     display: inline-block;
     margin-right: $spacing-third;
     margin-bottom: 0;
     font-size: .85em;
-        font-weight: 300;
-        line-height: 1.5em;
-        @include tablet {
-            font-size: 1em;
-            line-height: $base-line-height;
-        }
+    line-height: 1.5em;
+    @include tablet {
+        font-size: 1em;
+        line-height: $base-line-height;
+    }
 }
