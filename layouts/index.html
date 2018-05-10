@@ -4,13 +4,15 @@
     <div class="container">
 
         <!-- Introduction -->
+        <section class="home-introduction">
         <!-- Page title -->
-        <h1 itemprop="headline">{{ .Params.description }}</h1>
+        <h1 class="post-headline post-headline--home" itemprop="headline">{{ .Params.description }}</h1>
         <!-- Markdown content -->
-        <div class="post-content">
+        <div class="post-content post-content--home">
             {{ .Content }}
         </div>
-
+        <img class="lazyload" data-src="/images/bio/john-lewell-bw.png" alt="John Lewell Bio Picture" itemprop="image">
+        </section>
         
             <!-- Activate the pagination and then range through pages in blog -->
             {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}

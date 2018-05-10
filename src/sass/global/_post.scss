@@ -1,7 +1,23 @@
-/* Used in lists */
-.list-introduction {
+.list-introduction, .post-introduction, .home-introduction {
     margin-bottom: $spacing;
 } 
+
+.home-introduction {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-headlline {
+    
+}
+
+.post-content--home {
+    @include tablet {
+    flex-basis: 70%;
+}
+}
+
+
 
 .post-meta {
     font-family: $heading-font-family;
@@ -27,4 +43,10 @@
 
 .post-featured-image {
     margin-bottom: $spacing;
+}
+
+.post-content {
+    a {
+        font-family: $body-font-family;
+    }
 }
