@@ -1,22 +1,65 @@
 {{ define "main" }}
-<main class="main" role="main" id="main">
-    <!-- Width container -->
-    <div class="container container--home-intro">
-        <div class="left-side">
-            <!-- Page title -->
-            <h1 class="post-headline post-headline--home" itemprop="headline">{{ .Params.description }}</h1>
-            <!-- Markdown content -->
-            <div class="post-content post-content--home">
-                {{ .Content }}
-            </div>
+<main class="main" role="main">
+    <article itemscope itemtype="http://schema.org/WebPage">
+        <div class="wrapper">
+
+            <!-- Introduction (Markdown Content) -->
+            <section class="page-introduction">
+                <h1 class="page-headline" itemprop="headline">Discover Interesting Photography.</h1>
+                <!-- Markdown content -->
+                <div class="post-content">
+                    {{ .Content }}
+                </div>        
+            </section>
+
+            <!-- Cards section -->
+            <section class="cards">
+                <!-- Activate the pagination and then range through pages in blog -->
+                {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+                {{ range $paginator.Pages }}
+                    <!-- Start flexcard for articles layout -->
+                    <article class="card" itemscope itemtype="http://schema.org/BlogPosting">
+                        <div class="card__media--top">
+                            <a href="{{ .RelPermalink }}" itemprop="url">
+                                <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card__content">
+                            <!-- Card header -->
+                            <h2 class="card__header"itemprop="headline">
+                                <a class="card__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            </h2>
+                            <!-- Read time and publish date -->
+                            {{ partial "post-meta.html" . }}
+                            <!-- Card media -->
+                            <div class="card__media--under">
+                                <a href="{{ .RelPermalink }}" itemprop="url">
+                                    <img class="lazyload" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
+                                </a>
+                            </div>
+                            <!-- Read description -->
+                            <p class="card__description" itemprop="description">{{ .Params.description }}
+                        <a href="{{ .RelPermalink }}" class="card__link" itemprop="url">Keep reading »</a></p>
+                        </div>                
+                        <!-- Meta tags for Google about the post-->
+                        <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
+                        <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
+                        <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+                    <!-- End flexcard -->        
+                    </article>
+                <!-- End second range loop -->
+                {{ end }}
+            </section>
+            
+            <!-- Pagination -->
+            {{ partial "pagination.html" . }}
+
+        <!-- End wrapper -->
         </div>
-    <div class="right-side">
-        <img class="home-intro__image lazyload" data-src="/images/bio/john-lewell-colour-1.png" alt="John Lewell Bio Picture" itemprop="image">
-    </div>
-</div>
-        
-</div>
-<!-- End main -->    
-</main>
+
+    <!-- End main -->    
+    </main>
+
 <!-- End main insert -->
 {{ end }}

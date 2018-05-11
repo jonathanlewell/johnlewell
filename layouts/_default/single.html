@@ -1,54 +1,29 @@
 {{ define "main" }}
 <main class="main" role="main">
-    
-        <article itemscope itemtype="http://schema.org/WebPage">
+    <article itemscope itemtype="http://schema.org/WebPage">
+        <div class="wrapper">
+
             <!-- Breadcrumbs -->
-            <div class="container">
             {{ partial "breadcrumbs/breadcrumbs.html" . }}
-            </div>
 
-            <div class="container">
-            <section class="post-introduction">
-                
-            <!-- Page title -->
-            <h1 itemprop="headline">{{ .Title }}</h1>         
+            <section class="page-introduction">
+                <h1 class="post-headline" itemprop="headline">{{ .Title }}</h1>
+                <!-- Read time and publish or modification date -->
+                {{ partial "post-meta.html" . }}
+                <!-- Page featured image -->
+                {{ if .Params.featured_image }}
+                    <img class="lazyload post-featured-image" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
+                {{ end }}
+            </section>
 
-            <!-- Page featured image -->
-            {{ if .Params.featured_image }}
-                <img class="lazyload post-featured-image" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
-            {{ end }}
-        </section>
-    </div>
-            
-    <div class="container">
-            <!-- Markdown content -->
-            <div itemprop="articleBody">
+            <!-- The content -->
+            <section itemprop="articleBody">
                 {{ .Content }}
-            </div>
+            </section>
+
+        <!-- End wrapper -->
         </div>
-        </article>
 
-    <!-- End container -->
-   
+    </article>
 </main>
-
-
-
-<!-- Publisher article meta 
-<script type="application/ld+json">
-    {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "headline": "Emmys 2015: The 5 categories we're most excited to see",
-    "image": "http://rack.1.mshcdn.com/media/ZgkyMDE1LzA5LzIwLzQ0L2YyOGFiZmM5NmNkLmQ5ZjgxLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/418b1a9e/940/f28abfc9-6cd9-217b-8bc7-fd48dd3621a9_MM714-21.jpg",
-    "keywords": ["television","emmys","uncategorized","entertainment","tv","emmys-2015"],
-    "datePublished": "2015-09-20T13:39:38Z",
-    "articleSection": "entertainment",
-    "creator": "Sandra Gonzalez",
-    "author": "Sandra Gonzalez",
-    "articleBody": "The 2015 Emmy Awards are upon us, and while television's biggest night has in several years etc....",
-    "mainEntityOfPage": "True"
-    }
-</script>
--->
 {{ end }}

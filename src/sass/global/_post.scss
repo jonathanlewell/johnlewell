@@ -1,48 +1,10 @@
-.container--home-intro, .list-introduction, .post-introduction, .page-introduction {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    @include tablet {
-        margin-top: 48px;
-    }
+.page-introduction {
+    margin-top: ms(1);
+    margin-bottom: ms(1);
 }
-
-.container--home-intro {
-display: flex;
-}
-
-
-.post-headlline {
-    font-family: $heading-font-family;
-}
-
-.left-side {
-        margin-right: 24px;
-        width: 100%;
-        @include tablet {
-            width: 480px;
-        }
-        @include desktop {
-            width: 720px;
-        }
-}
-
-.home-intro__image {
-    display: none;
-    @include tablet {
-    float: right;
-    margin: 0 0 0 20px;
-    display: block;
-    width: 148px;
-    height: auto;
-    padding: 5px;
-    }
-}
-
 
 .post-meta {
     font-family: $link-font-family;
-    font-size: .85em;
-    line-height: 1.5em;
     margin-bottom: 24px;
     margin-right: 24px;
     display: flex;
@@ -50,15 +12,6 @@ display: flex;
     .post-meta__reading-time {
         margin-right: 24px;
     }
-}
-
-.post-headline {
-    margin-bottom: 24px;
-    margin-right: 24px;
-}
-
-.post-featured-image {
-    margin-bottom: 24px;
 }
 
 .post-content {

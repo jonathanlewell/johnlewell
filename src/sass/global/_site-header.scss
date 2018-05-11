@@ -1,13 +1,17 @@
 // Header
 .site-header {
-    padding: 24px 0;
+    margin-bottom: 12px;
+    padding: 12px 0;
     border-bottom: 1px solid #e8e8e8;
+    @include tablet {
+        margin-bottom: 24px;
+        padding: 24px 0;
+    }
 }
 
-.container--site-header {
+.site-header__inner {
     display: flex;
     flex-direction: column;
-    height: 75px;
     justify-content: space-between;
     @include tablet {
         flex-direction: row;
@@ -17,12 +21,9 @@
 
 // Site logo styles
 .site-logo {
-    margin-right: 24px;
-    @include desktop {
-        margin-right: 24px;
-    }
+    margin-bottom: 8px;
     &__svg {
-        height: 2em;
+        height: 2.25em;
     }
 }
 
@@ -32,19 +33,23 @@
         list-style: none;
         margin: 0;
         display: flex;
-    }
-    &__item {
-        margin-right: 12px;
-        margin-bottom: 0;
+        flex-wrap: wrap;
         @include tablet {
-            margin-right: 24px;
+            flex-wrap: nowrap;
         }
     }
-    &__link {
-        font-size: .90em;
+    &__item {
+        margin-right: ms(1);
+        margin-bottom: 0;
+        @include tablet {
+            margin-right: ms(2);
+        }
     }
 }
 
 .site-navigation__item:last-child {
     margin-right: 0;
+}
+
+.site-navigation__link {
 }
