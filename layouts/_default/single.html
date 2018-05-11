@@ -1,11 +1,15 @@
 {{ define "main" }}
 <main class="main" role="main">
-    <div class="container">
+    
         <article itemscope itemtype="http://schema.org/WebPage">
-            
             <!-- Breadcrumbs -->
+            <div class="container">
             {{ partial "breadcrumbs/breadcrumbs.html" . }}
-            
+            </div>
+
+            <div class="container">
+            <section class="post-introduction">
+                
             <!-- Page title -->
             <h1 itemprop="headline">{{ .Title }}</h1>         
 
@@ -13,16 +17,19 @@
             {{ if .Params.featured_image }}
                 <img class="lazyload post-featured-image" data-src="{{ .Params.featured_image }}" alt="{{ .Title }}" itemprop="image">
             {{ end }}
+        </section>
+    </div>
             
+    <div class="container">
             <!-- Markdown content -->
             <div itemprop="articleBody">
                 {{ .Content }}
             </div>
-
+        </div>
         </article>
 
     <!-- End container -->
-    </div>
+   
 </main>
 
 

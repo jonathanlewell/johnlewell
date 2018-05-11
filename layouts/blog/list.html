@@ -1,10 +1,14 @@
 {{ define "main" }}
 <main class="main" role="main" id="main">
 
-    <!-- List introduction -->
+    
     <div class="container">
         <!-- Breadcrumbs -->
         {{ partial "breadcrumbs/breadcrumbs.html" . }}
+    </div>
+
+    <div class="container">
+        <!-- List introduction -->
         <section class="list-introduction">
             <!-- Page title -->
             <h1 class="post-headline" itemprop="headline">{{ .Title }}</h1>
@@ -43,7 +47,7 @@
                         </div>
                         <!-- Read description -->
                         <p class="card__description" itemprop="description">{{ .Params.description }}
-                    <a href="{{ .RelPermalink }}" class="card__link" itemprop="url">Keep reading »</a></p>
+                    <a href="{{ .RelPermalink }}" class="card__link card__link--read-more" itemprop="url">Keep reading »</a></p>
                     </div>                
                     <!-- Meta tags for Google about the post-->
                     <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">

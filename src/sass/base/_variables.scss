@@ -1,5 +1,6 @@
 // Layout
-$base-line-height: 1.61803398875rem; //= 25.89px or 32.36px on large
+$magic-number: 1.61803398875rem; //= 25.89px or 32.36px on large
+$base-line-height: 1.5em;
 $spacing: $base-line-height; // Works out at 1.5em or 24px. Used for paddings and margins
 $max-page-width: $spacing*40;
 
@@ -15,11 +16,12 @@ $spacing-triple: $base-line-height*3;
 
 // Fonts 
 $heading-font-family: sans-serif;
-$heading-font-weight: 400;
-$body-font-family: Cambria, Georgia, "Times New Roman", Times, serif;
-$body-font-size: 1em;
-$body-font-weight: 400;
+$heading-font-weight: 600;
+$default-font-family: "CharterITCPro-Regular", Cambria, Georgia, serif;
+$default-font-size: 1em;
+$default-font-weight: 400;
 $link-font-family: sans-serif;
+
 
 // Colors
 
@@ -46,4 +48,4 @@ $block-border: 1px solid $button-color;
 
 // Screen sizes (styles apply to anything less than $tablet by default)
 $tablet: 600px;
-$desktop: 800px;
+$desktop: 960px;

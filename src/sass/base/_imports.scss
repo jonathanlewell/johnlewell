@@ -3,13 +3,13 @@
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lora-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/lora-v12-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Lora Regular'), local('Lora-Regular'),
-       url('../fonts/lora-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lora-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lora-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lora-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lora-v12-latin-regular.svg#Lora') format('svg'); /* Legacy iOS */
+       url('/fonts/lora-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/lora-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/lora-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/lora-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/lora-v12-latin-regular.svg#Lora') format('svg'); /* Legacy iOS */
 }
 
 /* lora-italic - latin */
@@ -17,13 +17,13 @@
   font-family: 'Lora';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/lora-v12-latin-italic.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/lora-v12-latin-italic.eot'); /* IE9 Compat Modes */
   src: local('Lora Italic'), local('Lora-Italic'),
-       url('../fonts/lora-v12-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lora-v12-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lora-v12-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lora-v12-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lora-v12-latin-italic.svg#Lora') format('svg'); /* Legacy iOS */
+       url('/fonts/lora-v12-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/lora-v12-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/lora-v12-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/lora-v12-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/lora-v12-latin-italic.svg#Lora') format('svg'); /* Legacy iOS */
 }  
 
 /* roboto-regular - latin */
@@ -31,11 +31,85 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
     src: local('Roboto'), local('Roboto-Regular'),
-         url('../fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+         url('/fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
   }
+
+/* CaslonPro-Regular.otf */
+@font-face {
+  font-family: 'ACaslonPro-Regular';
+  font-style: normal;
+  src: url('/fonts/ACaslonPro-Regular.otf'); /* IE9 Compat Modes */
+  src: local('ACaslonPro-Regular'), local('ACaslonPro-Regular'),
+       url('/fonts/ACaslonPro-Regular.otf?#iefix') format('opentype'), /* IE6-IE8 */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'CharterITCPro-Regular';
+  font-style: normal;
+  src: url('/fonts/CharterITCPro-Regular.eot'); /* IE9 Compat Modes */
+  src: local('CharterITCPro-Regular'), local('CharterITCPro-Regular'),
+       url('/fonts/CharterITCPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/CharterITCPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/CharterITCPro-Regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/CharterITCPro-Regular.ttf') format('truetype');
+}
+
+/* CaslonPro-Regular.otf */
+@font-face {
+  font-family: 'Kievitpro-black';
+  font-style: normal;
+  src: url('/fonts/Kievitpro-black.otf'); /* IE9 Compat Modes */
+  src: local('Kievitpro-black'), local('Kievitpro-black'),
+       url('/fonts/Kievitpro-black.otf?#iefix') format('opentype'), /* IE6-IE8 */
+}
+
+/* CaslonPro-Regular.otf */
+@font-face {
+  font-family: 'Kievitpro-blackitalic';
+  font-style: normal;
+  src: url('/fonts/Kievitpro-blackitalic.otf'); /* IE9 Compat Modes */
+  src: local('Kievitpro-blackitalic'), local('Kievitpro-blackitalic'),
+       url('/fonts/Kievitpro-blackitalic.otf?#iefix') format('opentype'), /* IE6-IE8 */
+}
+
+
+@font-face {
+  font-family: 'kievitmedium';
+  src: url("/fonts/Kievitpro-medium.otf");
+  src: local("Kievitpro-medium"),
+         url("/fonts/Kievitpro-medium.otf") format("opentype");
+}
+
+
+/* CaslonPro-Regular.otf */
+@font-face {
+  font-family: 'Kievitpro-mediumitalic';
+  font-style: normal;
+  src: url('/fonts/Kievitpro-mediumitalic.otf'); /* IE9 Compat Modes */
+  src: local('Kievitpro-mediumitalic'), local('Kievitpro-mediumitalic'),
+       url('/fonts/Kievitpro-mediumitalic.otf?#iefix') format('opentype'), /* IE6-IE8 */
+}
+
+
+@font-face {
+  font-family: 'Kievitpro-regular';
+  font-style: normal;
+  src: url('/fonts/Kievitpro-regular.otf'); /* IE9 Compat Modes */
+  src: local('Kievitpro-regular'), local('Kievitpro-regular'),
+       url('/fonts/Kievitpro-regular.otf?#iefix') format('opentype'), /* IE6-IE8 */
+}
+@font-face {
+  font-family: 'Kievitpro-regular';
+  font-style: italic;
+  src: url('/fonts/Kievitpro-italic.otf'); /* IE9 Compat Modes */
+  src: local('Kievitpro-italic'), local('Kievitpro-italic'),
+       url('/fonts/Kievitpro-italic.otf?#iefix') format('opentype'), /* IE6-IE8 */
+}
+

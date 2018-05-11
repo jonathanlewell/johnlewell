@@ -1,15 +1,6 @@
-// Overall container
-/*.site-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: $spacing;
-} */
-
 // Header
 .site-header {
-    padding: $spacing-half 0;
+    padding: 24px 0;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -26,9 +17,9 @@
 
 // Site logo styles
 .site-logo {
-    margin-right: $spacing-half;
+    margin-right: 24px;
     @include desktop {
-        margin-right: $spacing;
+        margin-right: 24px;
     }
     &__svg {
         height: 2em;
@@ -43,14 +34,14 @@
         display: flex;
     }
     &__item {
-        margin-right: $spacing-half;
+        margin-right: 12px;
         margin-bottom: 0;
+        @include tablet {
+            margin-right: 24px;
+        }
     }
     &__link {
-        font-size: .85em;
-        @include tablet {
-            font-size: 1em;
-        }
+        font-size: .90em;
     }
 }
 

@@ -1,7 +1,7 @@
 +++
-title= "Blog"
-description= "Welcome to my blog"
+title= "Street Photography Blog"
+description= "See what I see: ordinary people in suspended moments of time."
 draft= false
 +++
 
-Here you'll mainly find my insights into Street Photography. I also include some site announcements and cover other topics too. Enjoy.
+See what I see: ordinary people in suspended moments of time. I also include some site announcements and cover other topics too. Enjoy.

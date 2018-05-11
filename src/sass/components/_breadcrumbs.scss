@@ -1,28 +1,21 @@
-/*.site-breadcrumbs {
-    max-width: $max-page-width;
-    padding-left: $spacing;
-    padding-right: $spacing;
-    margin: $spacing*4 auto $spacing auto; // Pushes the page below that navigation
-    font-family: $link-font-family; 
-    font-weight: 300;
-    color: #333;
-}*/
- 
 .breadcrumbs {
         font-family: $link-font-family; 
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: $spacing;
+        margin-bottom: 12px;
         padding: 0;
         list-style-type: none;
+        @include tablet {
+            margin-bottom: 24px;
+        }
 }
 
 .breadcrumbs__item {
     display: inline-block;
-    margin-right: $spacing-half;
+    margin-right: 24px;
     margin-bottom: 0;
     font-size: .85em;
-    line-height: $base-line-height;
+    line-height: 24px;
     @include tablet {
         font-size: 1em;
     }

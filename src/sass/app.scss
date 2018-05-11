@@ -10,7 +10,7 @@
  
 // Global styles
 @import "global/background";
-@import "global/typography";
+@import "global/type"; 
 @import "global/page-layout";
 @import "global/site-header";
 @import "global/site-footer";
@@ -29,3 +29,4 @@
 @import "components/tables";
 @import "components/breadcrumbs";
 @import "components/pagination";
+@import "components/quotes";

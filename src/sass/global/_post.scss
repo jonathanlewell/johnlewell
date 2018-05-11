@@ -1,52 +1,68 @@
-.list-introduction, .post-introduction, .home-introduction {
-    margin-bottom: $spacing;
-} 
-
-.home-introduction {
-    display: flex;
-    flex-wrap: wrap;
+.container--home-intro, .list-introduction, .post-introduction, .page-introduction {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @include tablet {
+        margin-top: 48px;
+    }
 }
+
+.container--home-intro {
+display: flex;
+}
+
 
 .post-headlline {
-    
+    font-family: $heading-font-family;
 }
 
-.post-content--home {
+.left-side {
+        margin-right: 24px;
+        width: 100%;
+        @include tablet {
+            width: 480px;
+        }
+        @include desktop {
+            width: 720px;
+        }
+}
+
+.home-intro__image {
+    display: none;
     @include tablet {
-    flex-basis: 70%;
+    float: right;
+    margin: 0 0 0 20px;
+    display: block;
+    width: 148px;
+    height: auto;
+    padding: 5px;
+    }
 }
-}
-
 
 
 .post-meta {
-    font-family: $heading-font-family;
+    font-family: $link-font-family;
     font-size: .85em;
     line-height: 1.5em;
-    margin-bottom: $spacing-half;
+    margin-bottom: 24px;
+    margin-right: 24px;
     display: flex;
     flex-wrap: wrap;
     .post-meta__reading-time {
-        margin-right: $spacing-half;
+        margin-right: 24px;
     }
 }
 
 .post-headline {
-    font-size: 1.375em;
-    line-height: 1.0909em;
-    margin-bottom: $spacing-fourth;
-    @include tablet {
-        font-size: 1.618em;
-        line-height: 1em;
-    }
+    margin-bottom: 24px;
+    margin-right: 24px;
 }
 
 .post-featured-image {
-    margin-bottom: $spacing;
+    margin-bottom: 24px;
 }
 
 .post-content {
     a {
-        font-family: $body-font-family;
+        font-family: $default-font-family;
     }
 }

@@ -7,12 +7,13 @@ html {
 
 // Body (normal type) styles
 body {
-    font-size: $body-font-size;
+    font-size: $default-font-size;
     line-height: $base-line-height;
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
+    font-family: $default-font-family;
+    font-weight: $default-font-weight;
     color: $default-text-color;
 }
+
 
 // Heading styles 
 h1, h2, h3, h4, h5 {
@@ -48,7 +49,7 @@ ul,ol,dd,
 p,figure,
 pre,table,fieldset,hr{
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: $base-line-height;
 }
 
 small {
@@ -68,3 +69,4 @@ a {
   a:hover {      
     color: $link-text-color-hover;
 }
+
